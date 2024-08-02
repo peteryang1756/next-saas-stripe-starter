@@ -72,27 +72,6 @@ export function DashboardSidebar({ links }: DashboardSidebarProps) {
           >
             <div className="flex h-full max-h-screen flex-1 flex-col gap-2">
               <div className="flex h-14 items-center p-4 lg:h-[60px]">
-                {isSidebarExpanded ? <ProjectSwitcher /> : null}
-
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="ml-auto size-9 lg:size-8"
-                  onClick={toggleSidebar}
-                >
-                  {isSidebarExpanded ? (
-                    <PanelLeftClose
-                      size={18}
-                      className="stroke-muted-foreground"
-                    />
-                  ) : (
-                    <PanelRightClose
-                      size={18}
-                      className="stroke-muted-foreground"
-                    />
-                  )}
-                  <span className="sr-only">Toggle Sidebar</span>
-                </Button>
               </div>
 
               <nav className="flex flex-1 flex-col gap-8 px-4 pt-4">
@@ -257,7 +236,6 @@ export function MobileSheetSidebar({ links }: DashboardSidebarProps) {
                 ))}
 
                 <div className="mt-auto">
-                  <UpgradeCard />
                 </div>
               </nav>
             </div>
